@@ -47,5 +47,102 @@
     background-color: #666;
     margin: 9px 12px 0;
   }
- 
+
+  .header{
+    position:relative;
+    height: 105px;
+  }
+  /* 用定位坐标来排位置,子相父绝 */
+  .logo{
+    position: absolute;
+    top:25px;
+    left: 0px;
+    height: 56px;
+    width: 175px;
+   
+    
+  }
+  .logo a{
+    display: block;
+    height: 56px;
+    width: 175px;
+    background: url("../img/logo.png") no-repeat ;
+    /* 下面两句话用于隐藏a标签里的文字 */
+    text-indent: -999px;
+    overflow: hidden;
+}
+ .search{
+    position: absolute;
+    top: 25px;
+    left:348px;
+    
+}
+.search .text{
+    float: left;
+    width: 445px;
+    height: 36px;
+    padding-left: 10px;
+    border: 2px solid #b1191a;
+    color: #ccc;
+}
+.search .btn{
+    float: left;
+    width: 82px;
+    height: 36px;
+    border: 0;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+  .hotwords{
+    position:absolute;
+    top:65px;
+    left: 348px;
+}
+  .hotwords a{
+    margin:0 10px
+  }
+  .shopcar{
+    position: absolute;
+    top: 25px;
+    right:64px;
+    width: 138px;
+    height: 34px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 34px;
+    text-align: center;
+  }
+  .car{
+    font-family: icomoon;
+
+    color: #b1191a;
+
+  }
+  .arrow{
+    font-family: icomoon;
+
+    color: #ccc;
+
+  }
+  .count{
+    position: absolute;
+    left:100px;
+    background-color: #b1191a;
+    height: 14px;
+    padding: 0 3px;
+    line-height: 14px;
+    color: #fff;
+    /* border-radius: 左上角 右上角 右下角 左下角; */
+    border-radius: 7px 7px 7px 0;
+  }
+
+  /* header结束 */
+
+  /* nav开始 */
+  .nav{
+    height: 45px;
+  }
+
+
   
