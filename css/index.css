@@ -1,0 +1,119 @@
+.main{
+    width: 980px;
+    height: 455px;
+    margin: 10px 0 0 219px;
+}
+.focus{
+    position: relative;
+    width: 720px;
+    height: 455px;
+}
+
+.arrow_left,
+.arrow_right{
+    font-family: icomoon;
+    position:absolute;
+    /* 垂直居中先top设置50%,再往上走自己高度的一半就是-20px */
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.arrow_right{
+    right: 0;
+
+}
+.circle{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin:0 3px;
+    border-radius: 3px;
+    /* 鼠标放上去变成小手 */
+    cursor: pointer;
+}
+
+.newsflash{ 
+    width: 250px;
+    height: 455px;
+}
+.news{
+    height: 163px;
+    border: 1px solid #ccc;
+}
+
+.bargain{
+    height: 75px;
+    border: 1px solid #ccc;
+    margin-top: 9px;
+}
+.news_hd{
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dotted #ccc;
+    font-size:14px ;
+    padding:0 15px;
+}
+
+.news_hd a{
+    float: right;
+    font-family: icomoon;
+    font-size: 12px;
+}
+
+.news_bd{
+   margin: 10px 0 0 15px;
+}
+.news_bd li{
+    height: 23px;
+}
+
+.lifeservice{
+    height: 210px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.lifeservice li{
+    float: left;
+    width: 62px;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.lifeservice li a{
+    display: block;
+    /* 解决被下面的service_ico margin_top带下去外边距塌陷的问题 */
+    overflow: hidden;
+    height: 100%;
+}
+.lifeservice li p{
+    text-align: center;
+}
+.service_ico{
+    display: block;
+    height: 24px;
+    width: 24px;
+    background:url(../img/icon.png) no-repeat;
+    /* 这里设置的margin-top10px会把a带下来，都是块级元素 */
+    margin: 10px auto;
+}
+.service_ico_huafei{
+    background-position: -17px -16px;
+}
+
+.service_ico_feiji{
+    width: 26px;
+    background-position: -78px -16px;
+}
